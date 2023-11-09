@@ -1,8 +1,15 @@
 
+// con el children puedo hacerle al navbar una props de home, el cual pasa a quedar como hijo
+function NavBar({children}) {
 
-function NavBar() {
+  const saludar = () => {
+    alert ( 'buenas')
+   }
   return (
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+   <>
+   
+   
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,6 +33,8 @@ function NavBar() {
     </div>
   </div>
 </nav>
+{children}
+</>
   )
 }
 

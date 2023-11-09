@@ -1,13 +1,12 @@
-const Titulo = ({titulo, subTitulo}) => {
-  
-    return (
-    <div>
-    <h1>{titulo}</h1>
-    <h2>{subTitulo}</h2>
 
 
-    </div>
-
+function Titulo(props) {
+  return (
+    <>
+    <h1>{props.titulo}</h1>
+    <h2>{props.subtitulo}</h2>
+    
+    </>
   )
 }
 
